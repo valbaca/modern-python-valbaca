@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "modern-python-valbaca"
+version = "0.1.0"
+description = ""
+authors = ["Valentin Baca <valbaca@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/valbaca/modern-python-valbaca"
+repository = "https://github.com/valbaca/modern-python-valbaca"
+keywords = ["hypermodern"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.0.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
