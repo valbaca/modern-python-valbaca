@@ -17,6 +17,9 @@ requests = "^2.26.0"
 [tool.poetry.dev-dependencies]
 black = {version = "^21.9b0", allow-prereleases = true}
 pytest = "^6.2.5"
+coverage = {extras = ["toml"], version = "^5.5"}
+pytest-cov = "^2.12.1"
+pytest-mock = "^3.6.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
@@ -24,3 +27,14 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 modern-python-valbaca = "modern_python_valbaca.console:main"
+
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+
+[tool.coverage.run]
+branch = true
+source = ["modern_python_valbaca"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 70
