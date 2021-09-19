@@ -12,8 +12,10 @@ keywords = ["hypermodern"]
 [tool.poetry.dependencies]
 python = "^3.9"
 click = "^8.0.1"
+requests = "^2.26.0"
 
 [tool.poetry.dev-dependencies]
+black = {version = "^21.9b0", allow-prereleases = true}
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
